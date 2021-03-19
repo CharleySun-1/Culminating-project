@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Culminating_projectApp: App {
+    
+    @StateObject private var store = TaskStore(tasks: testData)
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: store)
         }
     }
 }
