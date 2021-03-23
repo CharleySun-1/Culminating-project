@@ -30,7 +30,7 @@ struct AddTask: View {
                         Text(TaskPriority.medium.rawValue).tag(TaskPriority.medium)
                         Text(TaskPriority.high.rawValue).tag(TaskPriority.high)
                     }
-                    .pickerStyle(SegmentedPickerStyle())
+
                     
                 }
             }
